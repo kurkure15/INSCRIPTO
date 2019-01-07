@@ -1,0 +1,129 @@
+@import url("hover-min.css");
+
+body{
+    margin: 0;
+    padding:0;
+    background-color: #FBEEE6;
+    background-position: center;
+
+}
+
+.sign{
+    width: 320px;
+    height: 420px;;
+    font-weight: bold;
+    top: 5%;
+    left: 40%;
+    bottom:30%;
+    position: absolute;
+    background-color:transparent;
+    box-sizing: border-box;
+    padding:60px 30px;
+    display:none;
+    float:left;
+}
+
+.btnC close{
+    font-size: 30px;
+    color:white;
+    position: absolute;
+    top:10px;
+    left:280px;
+    cursor: pointer;
+
+}
+
+.sign h3{
+    margin:0;
+    padding:0;
+    color:black;
+    font-size: 20px;
+    font-weight:bold;
+    font-family: 'Lobster';
+    
+}
+.sign input{
+    width: 100%;
+    margin-bottom: 20px;
+    color:black;
+
+}
+.sign input[type="text"], input[type="password"]{
+    border:none;
+    
+    background:transparent;
+    outline:none;
+   display: inline;
+    font-size: 16px;
+    border-radius: 10px;
+    
+}
+
+.sign input[type="submit"]{
+    border:none;
+    outline:none;
+    height:40px;
+    background: #33f02d;
+    color:#fff;
+    font-size: 15px;
+    border-radius: 20px;
+    position: absolute;
+    top:500px;
+    left:60px;
+    width:100px;
+    border-radius: 15px;
+}
+.gen{
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+    border-radius: 30px;
+    
+    box-shadow: darkgrey;
+
+}
+.op{
+    background-color: darkgrey;
+    box-shadow: darkgrey;
+    font-weight: bold;
+}
+ 
+.btnB{
+    font-size:12px;
+    position:absolute;
+    top:20px;
+    right:110px;
+    height:50px;
+    width:150px;
+    color:white;;
+    background-color:black;
+    font-weight: bold;
+    border-radius: inherit;
+}
+.btnB:hover{
+border-color: honeydew;
+    background-color:gray;
+    
+}
+
+@keyframes open{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+
+}
+@keyframes dele{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.sign{
+    animation: 3s linear open;
+}

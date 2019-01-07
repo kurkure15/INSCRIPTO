@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+
+.edit{
+    position: absolute;
+    top:-10px;
+    left:290px;
+    width:200px;
+    height:200px;
+    
+    border-radius:50%;
+}
+.prof{
+    display: none;
+    position:absolute;
+    top:110px;
+    left:350px;
+    width:700px;
+    height:500px;
+    background-color: #EED3C2;
+    border-width: 1px, solid;
+    border-color:black;
+    border-style: solid;
+}
+.horizon{
+    width:60%;
+    height:20px;
+    position: absolute;
+    top:220px;
+    left:250px;
+    background:0,0;
+    border-top: 1px;
+    border-style:solid;
+    border-color: #999;
+    border:0,solid #000;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    
+}
+.upload{
+    position: absolute;
+    top:60px;
+    left:350px;
+    border-radius: 50%;
+    border:none;
+    background-color: transparent;
+
+}
+
+.img{
+    width:140px;
+    height:140px;
+    border-radius: 50%;
+    border:none;
+}
+.mine{
+    font-size: 2em;
+    font-family: 'Black Han Sans', sans-serif;
+  }
+
+  .edit{
+      position: absolute;
+      top:75px;
+      left:680px;
+      width: 80px;
+      height:25px;
+      background: rgb(202, 201, 202);
+      border-style:solid;
+      border-color: #dbdbdb;
+      border-width: 1px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 26px;
+      outline: 0;
+      overflow: hidden;
+      color: #262626;
+      white-space: nowrap;
+      cursor: pointer;
+  }

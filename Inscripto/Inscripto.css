@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker'); 
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+        * {
+            box-sizing:border-box;
+            
+          }
+          
+          body {
+            max-width:480px;
+            margin:auto;
+            padding:10px;
+            position:relative;
+            background: #a19f9f;
+            
+          }
+          .mine{
+            font-size: 2em;
+            font-family: 'Black Han Sans', sans-serif;
+            
+            
+          }
+          .head{
+            color:white;
+            font-size: 20px;
+            position:absolute;
+            top:5px;
+            left:250px;
+            font-weight: bold;
+          }
+          .headT{
+            position: absolute;
+            left:620px;
+            top:53px;
+            width:200px;
+
+          }
+          .glyphicon-user{
+            position: relative;
+            left:1310px;
+            background:transparent;
+            color:rgb(138, 134, 126);
+            font-size: 30px;
+            border:solid;
+            border-radius: 18px;
+            border-width: 1px;
+          }
+
+          .glyphicon-user:hover{
+            color:black;;
+            border:solid;
+            border-color: black;
+            border-width: 1px;
+          }
+
+          
+
+          div{
+            top:0;
+            left:400px;
+            border-radius: 20px;
+			
+			
+          }
+          
+          
+          div[contenteditable] {
+            font-size:1.2em;
+            font-family: 'Chicle', cursive;
+            border:thick;
+          
+          
+            margin:0;
+            width:100%;
+            padding:10px 20px 10px;
+            min-height:300px;
+            background:rgb(255, 255, 255);
+          }
+          
+          div[contenteditable]:focus{
+            font-family: 'Chicle', cursive;
+            font-size:1em;
+          }
+          
+          .header {
+            margin:5px 10px 0;
+            color:#d46e58;
+            display:inline-block;
+          }
+          
+          .note {
+            background:rgb(51, 49, 51);
+            box-shadow:transparent 1px 1px 3px;
+            margin: 30px 0;
+            padding-top:30px;
+            min-height:150px;
+            width:100%;
+            display:block;
+            position:relative;
+            overflow:hidden;
+          }
+          
+          .date {
+            position:absolute;
+            top:0;
+            left:0;
+            padding:12px;
+            font-size:0.8em;
+            color:rgb(250, 250, 250);
+            font-weight: bold;
+            font-family: 'Share Tech', sans-serif;
+  
+  
+          }
+          
+          .icons {
+            position:absolute;
+            right:0;
+            top:0;
+            padding:10px;
+            
+          }
+  
+          
+  
+          .material-icons:hover{
+            color:green;
+          }
+  
+          .glyphicon-check {
+            color:gold
+          }
+          
+          .glyphicon-trash {
+            color:#C2474B;
+          }
+            
+           .glyphicon-trash:hover {
+              color:rgb(15, 15, 15);
+            }
+          
+          .glyphicon-pencil {
+            color:rgb(71, 223, 25);
+          }
+           div{
+             transition: 500ms;
+             background-color: rgb(255, 255, 255);
+           }
+          
+           .txt{
+             text-align: left;
+             color:rgb(255, 255, 255);
+             padding:initial;
+             font-family: 'Permanent Marker', cursive;
+            font-size: 30px;
+           }
+           .add{
+             position: fixed;
+             top:50px;
+             left:850px;
+             bottom:0;
+             
+             
+           }
+           
+  
+  @keyframes added {
+      from {
+        opacity: 0;
+        
+        background-color:rgb(83, 81, 83);
+      
+      }
+      to {
+        opacity: 1,;
+        
+        background-color: rgb(51, 49, 51);
+        
+      }
+    }
+    
+    @keyframes deleted {
+      from {
+        
+        opacity: 1;
+        background-color : rgb(51, 49, 51);
+        
+      }
+      to {
+        
+        opacity: 0;
+        background-color:rgb(83, 81, 83);
+        
+      }
+    }
+  
+  .note.ng-enter{
+      animation: 2s linear added;
+  }
+   
+  .note.ng-leave {
+      animation: 1.5s linear deleted;
+    }
+    
+    .glyphicon-pencil.ng-enter{
+        background-color: blue
+    }
+  
+  
